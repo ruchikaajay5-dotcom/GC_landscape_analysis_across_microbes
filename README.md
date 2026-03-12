@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Genome GC Landscape Analysis
 
 ## Biological question:
@@ -21,5 +20,5 @@ H pylori GC ~39%
 
 ## Interpretation:
 Different GC composition reflects evolutionary differences in bacterial genomes.
-=======
+
 
