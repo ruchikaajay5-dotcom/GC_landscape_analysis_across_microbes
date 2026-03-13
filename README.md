@@ -27,8 +27,20 @@ Complete Genome sequences were downloaded from **NCBI** in FASTA format.
 
 ## Computational Approach
 
-The genome sequence count, genome length and GC count was determined in the operating system **Ubuntu (Linux)**.
-The analysis was performed in **R** using the **Biostrings** package.
+1. The genome sequence count, genome length and GC count was determined in the operating system **Ubuntu (Linux)**.
+2. The analysis was performed in **R** using the **Biostrings** package.
+
+Workflow chart:
+FASTA genome
+      ↓
+Sliding window (1000 bp)
+      ↓
+Calculate GC
+      ↓
+Plot GC landscape
+      ↓
+Compare organisms
+
 ---
 
 ## Outputs
@@ -88,7 +100,6 @@ M. tuberculosis shows a GC distribution centered around ~65%, indicating a GC ri
 
 S. coelicolor displays an extremely rich GC distribution around ~72%, suggesting a
 relatively uniform GC content across the genome.
-
 
 ---
 
