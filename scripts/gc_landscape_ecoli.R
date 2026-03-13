@@ -27,7 +27,4 @@ plot(gc_values, type="l",
      ylab="GC content",
      main="GC Landscape of E coli genome")
 abline(h = gc_fraction, col="red")
-png("../results/ecoli_gc_plot.png")
-
-
-
+png("results/ecoli_gc_landscape.png")
