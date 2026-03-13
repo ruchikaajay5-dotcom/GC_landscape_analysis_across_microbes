@@ -1,5 +1,3 @@
-#!/bin/bash
-
 echo "Mycobacterium tuberculosis sequences:"
 grep "^>" ../data/mtub/mtub.fasta | wc -l
 
