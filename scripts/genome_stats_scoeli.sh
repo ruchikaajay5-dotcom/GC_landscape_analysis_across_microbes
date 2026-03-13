@@ -1,4 +1,3 @@
-
 echo "Streptomyces coelicolor sequences:"
 grep "^>" ../data/Scoeli/scoeli.fasta | wc -l
 

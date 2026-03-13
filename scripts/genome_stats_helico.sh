@@ -1,7 +1,3 @@
-
-# Genome statistics script
-# Calculates sequence count, genome length, and GC count
-
 echo "H pylori sequences:"
 grep "^>" ../data/helico/helicobacter.fasta | wc -l
 
