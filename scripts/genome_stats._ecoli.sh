@@ -1,4 +1,3 @@
-
 echo "E coli sequences:"
 grep "^>" ../data/ecoli/ecoli.fasta | wc -l
 
