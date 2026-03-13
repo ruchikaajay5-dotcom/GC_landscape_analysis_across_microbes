@@ -40,12 +40,6 @@ p <- ggplot(gc_df, aes(x = GC, fill = Organism)) +
        y = "Number of genome windows") +
   theme(legend.position = "none")
 
-ggsave("results/gc_distribution_all_ggplot.png", plot = p,
+ggsave("C:/Users/lenov/OneDrive/Desktop/genome-gc-landscape/results/gc_distribution_all_ggplot.png", plot = p,
        width = 10, height = 8, units = "in", dpi = 300)
 
-
-
-summary(gc_ecoli)
-summary(gc_hpylori)
-summary(gc_mtub)
-summary(gc_scoelicolor)
