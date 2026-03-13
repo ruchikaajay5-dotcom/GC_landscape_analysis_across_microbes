@@ -89,7 +89,7 @@ From the analysis:
 * **Helicobacter pylori** shows low GC content (~38%)
 * **E. coli** shows moderate GC (~50%)
 * **Mycobacterium tuberculosis** is GC rich (~65%)
-* **Streptomyces coelicolor** is extremely GC rich (~72%)
+* **Streptomyces coelicolor** is highly GC rich (~72%)
 
 E. coli shows a GC distribution centered around ~50%, indicating a moderate GC genome with some variation across the genome.
 
