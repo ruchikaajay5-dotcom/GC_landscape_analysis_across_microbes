@@ -1,30 +1,40 @@
 library(Biostrings)
 
-#load the Ecoli genome
-genome_ecoli <- readDNAStringSet("../data/ecoli/ecoli.fasta")
-head(genome_ecoli)
+# Load E coli genome
+genome_ecoli <- readDNAStringSet("C:/Users/lenov/OneDrive/Desktop/genome-gc-landscape/data/ecoli/ecoli.fasta")
 
 seq <- genome_ecoli[[1]]
-View(seq)
 length(seq)
 
+# Window size
 window <- 1000
-starts <- seq(1, length(seq)-window, by=window)
 
+# Window start positions
+starts <- seq(1, length(seq) - window, by = window)
+
+# Calculate GC content per window
 gc_values <- sapply(starts, function(s) {
-  fragment <- subseq(seq, start=s, width=window)
+  
+  fragment <- subseq(seq, start = s, width = window)
+  
   freq <- letterFrequency(fragment, c("G","C"))
-  sum(freq)/window
+  
+  sum(freq) / window
 })
 
+# Whole genome GC
 gc_total <- letterFrequency(seq, c("G","C"))
-gc_total
 gc_fraction <- sum(gc_total) / length(seq)
-gc_fraction
 
-plot(gc_values, type="l",
-     xlab="Genome window",
-     ylab="GC content",
-     main="GC Landscape of E coli genome")
-abline(h = gc_fraction, col="red")
-png("results/ecoli_gc_landscape.png")
+# Save plot
+png("results/ecoli_gc_landscape.png", width = 1000, height = 800)
+
+plot(gc_values, type = "l",
+     xlab = "Genome window",
+     ylab = "GC content",
+     main = "GC Landscape of E coli genome")
+
+abline(h = gc_fraction, col = "red")
+
+dev.off()
+dev.list()

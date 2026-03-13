@@ -1,6 +1,5 @@
-getwd()
-
 library(Biostrings)
+
 genome_mtub <- readDNAStringSet("C:/Users/lenov/OneDrive/Desktop/genome-gc-landscape/data/mtub/mtub.fasta.fna")
 head(genome_mtub)
 
@@ -22,9 +21,14 @@ gc_total
 gc_fraction <- sum(gc_total) / length(seq)
 gc_fraction
 
-plot(gc_values, type="l",
-     xlab="Genome window",
-     ylab="GC content",
-     main="GC Landscape of Mycobacterium tuberculosis genome")
-abline(h = gc_fraction, col="red")
-png("results/mtub_gc_landscape.png")
+png("results/mtub_gc_landscape.png", width = 1000, height = 800)
+
+plot(gc_values, type = "l",
+     xlab = "Genome window",
+     ylab = "GC content",
+     main = "GC Landscape of M tuberculosis genome")
+
+abline(h = gc_fraction, col = "red")
+
+dev.off()
+dev.list()
