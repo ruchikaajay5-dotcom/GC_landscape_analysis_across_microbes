@@ -79,6 +79,17 @@ From the analysis:
 * **Mycobacterium tuberculosis** is GC rich (~65%)
 * **Streptomyces coelicolor** is extremely GC rich (~72%)
 
+E. coli shows a GC distribution centered around ~50%, indicating a moderate GC genome with some variation across the genome.
+
+H. pylori displays a narrow GC distribution around ~38%, suggesting a
+ AT-rich genome and a fairly uniform GC content.
+
+M. tuberculosis shows a GC distribution centered around ~65%, indicating a GC rich genome with a moderate variation.
+
+S. coelicolor displays an extremely rich GC distribution around ~72%, suggesting a
+relatively uniform GC content across the genome.
+
+
 ---
 
 ## Project Structure
@@ -105,6 +116,7 @@ GC_landscape_analysis_across_microbes
 
 ## Tools Used
 
+* **Ubuntu(Linux)**
 * **R**
 * **Biostrings**
 * Base R plotting
@@ -116,19 +128,11 @@ GC_landscape_analysis_across_microbes
 This project was created while transitioning from **wet-lab molecular biology to computational genomics**.
 
 Skills practiced:
-
 * working with genome FASTA files
+* determining the GC count using Linux
 * basic sequence analysis in R
 * sliding window analysis
 * visualizing genomic patterns
 
 ---
 
-## Possible Extensions
-
-Future improvements could include:
-
-* comparing GC landscapes across more bacteria
-* linking GC regions with **gene density**
-* identifying **genomic islands**
-* evolutionary comparison of GC bias
