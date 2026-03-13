@@ -1,11 +1,11 @@
 {
     "id": "A0AA6771",
-    "path": null,
-    "project_path": null,
+    "path": "C:/Users/lenov/OneDrive/Desktop/genome-gc-landscape/data/GC_distribution_across_bacterial_genomes.R",
+    "project_path": "data/GC_distribution_across_bacterial_genomes.R",
     "type": "r_source",
-    "hash": "0",
+    "hash": "1273076709",
     "contents": "",
-    "dirty": true,
+    "dirty": false,
     "created": 1773419098493.0,
     "source_on_save": false,
     "relative_order": 1,
@@ -17,11 +17,11 @@
         "scrollLine": "33"
     },
     "folds": "",
-    "lastKnownWriteTime": 0,
-    "encoding": "",
+    "lastKnownWriteTime": 1773422509,
+    "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1773420604369,
+    "last_content_update": 1773422509134,
     "read_only": false,
     "read_only_alternatives": []
 }
