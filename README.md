@@ -30,7 +30,8 @@ Complete Genome sequences were downloaded from **NCBI** in FASTA format.
 1. The genome sequence count, genome length and GC count was determined in the operating system **Ubuntu (Linux)**.
 2. The analysis was performed in **R** using the **Biostrings** package.
 
-Workflow chart:
+Workflow:
+
 FASTA genome
       ↓
 Sliding window (1000 bp)
