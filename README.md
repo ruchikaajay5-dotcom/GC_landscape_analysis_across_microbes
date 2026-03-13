@@ -123,6 +123,18 @@ GC_landscape_analysis_across_microbes
 
 ---
 
+## How to run
+
+1. Clone repository
+git clone <repo>
+
+2. Open R
+
+3. Run script
+source("scripts/gc_analysis.R")
+
+---
+
 ## Learning Goals
 
 This project was created while transitioning from **wet-lab molecular biology to computational genomics**.
