@@ -32,15 +32,7 @@ Complete Genome sequences were downloaded from **NCBI** in FASTA format.
 
 Workflow:
 
-FASTA genome
-      ↓
-Sliding window (1000 bp)
-      ↓
-Calculate GC
-      ↓
-Plot GC landscape
-      ↓
-Compare organisms
+FASTA genome --> Sliding window (1000 bp) --> Calculate GC --> Plot GC landscape --> Compare organisms
 
 ---
 
